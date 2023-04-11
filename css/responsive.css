@@ -5,6 +5,12 @@
     .contact_img{
         display:none;
     }
+    .header_form{
+        display: none;
+    }
+    .header_nav{
+        justify-content: flex-end;
+    }
 }
 
 @media (max-width: 768px) {
@@ -12,5 +18,7 @@
 }
 
 @media (max-width: 640px) {
-    
+    .nav_links{
+        display: none;
+    }
 }
