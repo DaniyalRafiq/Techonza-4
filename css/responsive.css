@@ -54,6 +54,12 @@
 .main_2nd_card{
     flex-direction: column;
 }
+.hero_card_main{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+}
+
 }
 @media (max-width: 768px) {
 }
