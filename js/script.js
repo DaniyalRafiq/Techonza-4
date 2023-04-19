@@ -13,7 +13,7 @@ $('.menu_close ').click(function () {
 
 var swiper = new Swiper(".hero_slider", {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   speed:500,
   spaceBetween: 30,
   
@@ -30,10 +30,15 @@ var swiper = new Swiper(".hero_slider", {
 
       // When window width is >= 992px
       992: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       } ,
       768:{
-        slidesPerView : 3 ,
+        slidesPerView : 2 ,
+      } ,
+      630 :{
+        
+      
+        slidesPerView : 2 ,
       }
   
     }

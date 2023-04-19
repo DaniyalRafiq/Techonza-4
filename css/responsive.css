@@ -58,13 +58,60 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+    
+}
+ .swiper-slide-duplicate-prev  , .swiper-slide-prev {
+     opacity: 0.3;
+    scale: 0.9;
+    transition: 0.3s;
 }
 
 }
 @media (max-width: 768px) {
+
 }
+
 @media (max-width: 640px) {
     .nav_links{
         display: none;
+    }
+    .social_icons{
+        gap: 5px;
+    }
+    .twitter, .facebook, .instagram, .linkedin{
+        height: 25px;
+        width: 25px;
+    }
+    .latest_2nd_img{
+        flex:0  0 100px ;
+    }
+    .latest_title h4{
+        font-size: 17px ;
+    }
+    .latest_2nd_cntent .author figure{
+        height: 30px;
+        flex: 0 0 30px;
+    }
+    .latest_2nd_cntent .author p  , .latest_2nd_cntent .author .date{
+        font-size: 13px;
+    }
+    .latest_2nd_tags a{
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+    .latest_2nd_img figure{
+        height: 120px;
+    width: 120px;
+    }
+    @media (max-width: 630px) {
+        .swiper-slide-duplicate-prev ,  .swiper-slide-next {
+            opacity: 0.3;
+            scale: 0.9;
+            transition: 0.3s;
+        }
+        .author_details{
+            flex-direction: column;
+            font: 12px;
+        }
     }
 }
