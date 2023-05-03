@@ -1489,7 +1489,7 @@ figure {
     border-radius: 7px;
 }
 .cate_card:hover .cate_card_img {
-    outline-color: var(--secondary-900);
+    outline-color: var(--secondary-200);
 }
 .cate_btn:hover {
     background: var(--secondary-900);
