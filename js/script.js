@@ -43,6 +43,15 @@ $(document).ready(function () {
 
     }
   });
+  var swiper = new Swiper(".footer_slider", {
+    loop: true,
+    slidesPerView: 1,
+    speed: 500,
+     direction : "vertical" ,
+    autoplay :{
+      delay : 3000 
+    }
+  });
   const mainAlpha = $('.alphabet');
   const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   for (let index = 0; index < alphabet.length; index++) {

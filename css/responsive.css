@@ -1,3 +1,28 @@
+@media (max-width: 1200px) {
+    .code_head{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .code_card_content{
+justify-content: center;
+}
+    .code_card{
+        flex-direction: column;
+    }
+    .cord_card_img{
+        height: 100px;
+    }
+    .code_subtitle h4{
+        text-align: center;
+    }
+    .code_subtitle p{
+        text-align: center;
+    }
+    .code_card_footer{
+        justify-content: space-evenly;
+    }
+}
 @media (max-width: 1024px) {
 
     .latest_post_main{
@@ -83,6 +108,21 @@
 .side_bar.blogs_search{
     display: none;
 }
+.code_head{
+    flex-direction: row;
+}
+.code_card{
+    flex-direction: row;
+}
+.code_card_footer{
+    justify-content: space-between;
+}
+.code_subtitle h4{
+    text-align: unset;
+}
+.code_subtitle p{
+    text-align: unset;
+}
 }
 @media (max-width: 768px) {
 
@@ -117,18 +157,51 @@
         height: 120px;
     width: 120px;
     }
-    @media (max-width: 630px) {
-        .swiper-slide-duplicate-prev ,  .swiper-slide-next {
-            opacity: 0.3;
-            scale: 0.9;
-            transition: 0.3s;
-        }
-        .author_details{
-            flex-direction: column;
-            font: 12px;
-        }
-     .cate_card_img{
-        transform: translate(5px, -5px);
-     }
+    .code_head{
+        flex-direction: column;
     }
+    .code_card{
+        flex-direction: column;
+
+    }
+    .footer_content{
+        margin: 0 20px;
+    }
+    .footer_botton span{
+        text-align: center;
+    }
+    .exp{
+        text-align: center;
+    }
+    .code_subtitle h4{
+        text-align: center;
+
+    }
+    .code_card_footer{
+        justify-content: space-evenly;
+    }
+    .code_subtitle p{
+        text-align: center;
+    }
+}
+@media (max-width: 630px) {
+    .swiper-slide-duplicate-prev ,  .swiper-slide-next {
+        opacity: 0.3;
+        scale: 0.9;
+        transition: 0.3s;
+    }
+    .author_details{
+        flex-direction: column;
+        font: 12px;
+    }
+ .cate_card_img{
+    transform: translate(5px, -5px);
+ }
+ .cord_card_img{
+    flex: 0 0 90px;
+ }
+ .code_card_btn{
+    flex: 0 0 50px;
+ }
+
 }
