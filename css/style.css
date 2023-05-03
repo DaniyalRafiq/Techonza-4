@@ -2385,10 +2385,9 @@ h4.single_card_title.webkit {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 30px;
+        padding: 30px 0;
     }
     .copy_code form {
-        /* background: red; */
         padding: 5px;
         border: dashed 2px black;
         width: 60%;
@@ -2401,18 +2400,89 @@ h4.single_card_title.webkit {
         transition: 0.3s;
         font-size: 21px;
     }
+    .coupon_btn {
+        position: relative;
+        display: block;
+        width: 170px;
+        height: 40px;
+        /* overflow: hidden; */
+        border-radius: 5px;
+        transition: 0.3s;
+        perspective: 300px;
+    }
+    .get_code {
+        position: absolute;
+        background: var(--primary-100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+        right: 0;
+        z-index: 2;
+        right: 0;
+        font-weight: 600;
+        bottom: 0;
+        transform-origin: bottom;
+    }
+    .copy_num {
+        background-color: var(--secondary-200);
+        position: absolute;
+        top: -40px;
+        border-radius: 5px;
+        padding: 5px 12px;
+        font-size: 14px;
+        right: -30px;
+        color: white;
+        transition: 0.3s;
+        opacity: 0;
+    }
+    
+    .copy_num:before {
+        content: "";
+        background-color: var(--secondary-100);
+        height: 16px;
+        width: 10px;
+        border: 0;
+        clip-path: polygon(53% 100%, 0 0, 100% 0);
+        position: absolute;
+        top: 100%;
+        right: 50%;
+    }
+    
+    button.copy_code:hover .copy_num {
+        opacity: 0;
+    }
+    .coupon_code {
+        background: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        border-radius: 5px;
+        width: 100%;
+        border: 2px solid var(--primary-100);
+        height: 100%;
+        padding-right: 10px;
+        font-size: 19px;
+    }
+    .coupon_btn:hover .get_code {
+        background: var(--primary-200);
+        transform: rotateX(-60deg);
+    }   
     
     .copy_code form input {
         background: white;
         padding-left: 5px;
     }
     button.copy_code {
-        position: absolute;
-        top: 50%;
         display: flex;
-        transform: translate(0px, -50%);
-        left: 70%;
         font-size: 22px;
+        width: unset;
+        flex: 0 0 30px;
     }
     
     .copy_code {
@@ -2428,4 +2498,12 @@ h4.single_card_title.webkit {
 }
 .copy_code:hover form {
     border-radius: 2px;
+}
+button.copy_code:hover ~ .copy_num {
+    opacity: 1;
+}
+
+.code {
+    flex: 1;
+    text-align: center;
 }
