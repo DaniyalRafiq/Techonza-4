@@ -1,15 +1,11 @@
 $(document).ready(function () {
 
-  $('.search_icon').click(function () {
-    $(this).children(".fa").toggleClass('fa-search').toggleClass("fa-search-plus")
-    $(this).parent(".form").toggleClass('active')
-  })
-  $('.menu , .menu_close ').click(function () {
-    $(this).siblings(".nav_links").toggleClass('active');
-  })
-  $('.menu_close ').click(function () {
-    $(this).parent(".nav_links").toggleClass('active');
-  })
+
+  $(".menu").click(function () {
+    $(".nav_links").toggleClass('active');
+    $('body').toggleClass('active');
+    $(this).find('.fa-bars').toggleClass("fa-x");
+  });
 
   var swiper = new Swiper(".hero_slider", {
     loop: true,
