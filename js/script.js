@@ -60,4 +60,26 @@ $(document).ready(function () {
   $('.deals_item').click(function () {
     $(this).addClass('active').siblings().removeClass('active')
   });
+
+  const searchInput = $('.search_input');
+  const headerSearchResult = $('.header_search_result');
+  const headerForm = $('.form');
+
+  searchInput.on('input', function() {
+      if (searchInput.val().trim() !== '') {
+          headerSearchResult.addClass('Active');
+          headerForm.addClass('Active');
+      } else {
+          headerSearchResult.removeClass('Active');
+          headerForm.removeClass('Active');
+      }
+  });
+  // Simulate loading content
+setTimeout(function() {
+  // Hide the loader
+  document.getElementById("loader").style.display = "none";
+  
+  // Show the content
+  document.getElementById("content").style.display = "block";
+}, 2000); // Simulate a 2-second loading time
 })

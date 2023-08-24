@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
    <title>Blogs-3rd</title>
    <link rel="stylesheet" href="./css/bootstrap.css">
@@ -21,342 +21,299 @@
    <header class="header">
       <div class="header_top">
          <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="header_top_content">
-                  <div class="logo">
-                   <img src="images/logo.svg" alt="">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="header_top_content">
+                     <div class="logo_main">
+                        <div class="logo">
+                           <img src="images/logo.svg" alt="">
+                        </div>
+                     </div>
+
+                     <ul class="nav_links ">
+                   
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="single_category.html">Blog</a></li>
+                        <li><a href="categories.html">Category</a></li>
+                        <li><a href="contact.html" class="contact_us">Contact Us</a></li>
+                     </ul>
+                     <div class="header_contact">
+                        <a href="contact.html" class="contact_btn">
+                           Contact
+                        </a>
+                     </div>
+                     <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                          <path class="line line2" d="M 20,50 H 80" />
+                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                      </button>
                   </div>
-                  <div class="social_icons">
-                   <div class="twitter">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                   </div>
-                   <div class="facebook">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                   </div>
-                   <div class="instagram">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                   </div>
-                   <div class="linkedin">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                   </div>
-                </div>
                </div>
-               </div>
-               </div>
+            </div>
          </div>
       </div>
       <div class="header_bottom">
          <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-              <div class="nav_bar">
-               <div class="header_form">
-                  <form action="" class="form ">
-                     <input type="text" placeholder="Search" class="search_input active" >
-                     <div class="search_icon">
-                        <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="nav_bar">
+                     <div class="header_form">
+                        <form action="" class="form ">
+                           <input type="text" placeholder="Search" class="search_input active">
+                           <div class="search_icon">
+                              Search
+                           </div>
+                        </form>
+                        <div class="header_search_result">
+                           <h4 class="header_search_result_keys">
+                              Enter Keywords To Search
+                           </h4>
+                           <div class="header_post">
+                              <a href="#" class="side_bar_card">
+                                 <div class="sidebar_card_img">
+                                    <figure>
+                                       <img src="images/Card/card.jpg" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_card_content">
+                                    <h4 class="webkit">
+                                       Qatar World Cup: Fans must show negative COVID-19 result
+                                    </h4>
+                                    <div class="sidebar_card_tags">
+                                       <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
+                                       <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#" class="side_bar_card">
+                                 <div class="sidebar_card_img">
+                                    <figure>
+                                       <img src="images/Card/card3.jpg" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_card_content">
+                                    <h4 class="webkit">
+                                       Qatar World Cup: Fans must show negative COVID-19 result
+                                    </h4>
+                                    <div class="sidebar_card_tags">
+                                       <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
+                                       <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#" class="side_bar_card">
+                                 <div class="sidebar_card_img">
+                                    <figure>
+                                       <img src="images/Card/card1.jpg" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_card_content">
+                                    <h4 class="webkit">
+                                       Qatar World Cup: Fans must show negative COVID-19 result
+                                    </h4>
+                                    <div class="sidebar_card_tags">
+                                       <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
+                                       <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
                      </div>
-                  </form>
-               </div>
-               <ul class="nav_links ">
-                  <div class="menu_close">
-                     <i class="fa fa-times" aria-hidden="true"></i>
+
                   </div>
-                  <li><a href="index.html" >Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="store.html" class="active" >Store</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="categories.html">Category</a></li>
-                  <li><a href="contact.html" class="contact_us" >Contact Us</a></li>
-               </ul>
-          
-               <div class="header_contact">
-                  <a href="contact.html" class="contact_btn">
-                     Contact
-                  </a>
-               </div>
-               <div class="menu">
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-               </div>
-            </div>
 
                </div>
-               </div>
+            </div>
          </div>
       </div>
-            </div>
+      </div>
 
-            </div>
+      </div>
    </header>
 
    <main>
-<!-- ==========Store========== -->
-<section class="store">
-    <div class="container">
-       <div class="row">
-          <div class="col-md-12">
-             <div class="blog_section flex_start">
-                   <div class="position_static">
-                      <div class="blog_sidebar">
-                         <div class="side_bar blogs_search">
-                            <div class="header_form side_bar_form ">
-                               <input type="text" placeholder="Search" >
-                               <button>
-                                  Go
-                               </button>
-                            </div>
-                         </div>
-                         <div class="side_bar  category_side">
-                            <h4> <span> Filters</span></h4>
-                            
-                            <div class="blog_cateogry">
-                               <a href="#"  class="blog_cateogry_child active ">
-                                  <div class="blog_cateogry_content">
-                                     <i class="fa fa-caret-right" aria-hidden="true"></i>  Best Deals
-                                  </div>
-                                  <div class="blog_cateogry_num">
-                                     (1320)
-                                  </div>
-                               </a>
-                               <a href="#"  class="blog_cateogry_child">
-                                  <div class="blog_cateogry_content">
-                                     <i class="fa fa-caret-right" aria-hidden="true"></i>  Shopping
-                                  </div>
-                                  <div class="blog_cateogry_num">
-                                     (720)
-                                  </div>
-                               </a>
-                               <a href="#"  class="blog_cateogry_child">
-                                  <div class="blog_cateogry_content">
-                                     <i class="fa fa-caret-right" aria-hidden="true"></i>  Sports
-                                  </div>
-                                  <div class="blog_cateogry_num">
-                                     (540)
-                                  </div>
-                               </a>
-                               <a href="#"  class="blog_cateogry_child">
-                                  <div class="blog_cateogry_content">
-                                     <i class="fa fa-caret-right" aria-hidden="true"></i>  Travel
-                                  </div>
-                                  <div class="blog_cateogry_num">
-                                     (670)
-                                  </div>
-                               </a>
-                               <a href="#"  class="blog_cateogry_child">
-                                  <div class="blog_cateogry_content">
-                                     <i class="fa fa-caret-right" aria-hidden="true"></i>  Coupon Code
-                                  </div>
-                                  <div class="blog_cateogry_num">
-                                     (350)
-                                  </div>
-                               </a>
-                            </div>
-                         </div>
-                         <div class="side_bar blogs_side">
-                            <h4> <span>Blogs</span></h4>
-                            <div class="side_bar_blogs">
-                               <a href="#" class="side_bar_card">
-                                  <div class="sidebar_card_img">
-                                     <figure>
-                                        <img src="images/Card/card.jpg" alt="">
-                                     </figure>
-                                  </div>
-                                  <div class="sidebar_card_content">
-                                     <h4 class="webkit" >
-                                        Qatar World Cup: Fans must show negative COVID-19 result
-                                     </h4>
-                                     <div class="sidebar_card_tags">
-                                        <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
-                                        <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
-                                     </div>
-                                  </div>
-                               </a>
-                               <a href="#" class="side_bar_card">
-                                  <div class="sidebar_card_img">
-                                     <figure>
-                                        <img src="images/Card/card1.jpg" alt="">
-                                     </figure>
-                                  </div>
-                                  <div class="sidebar_card_content">
-                                     <h4 class="webkit" >
-                                        Qatar World Cup: Fans must show negative COVID-19 result
-                                     </h4>
-                                     <div class="sidebar_card_tags">
-                                        <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
-                                        <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
-                                     </div>
-                                  </div>
-                               </a>
-                               <a href="#" class="side_bar_card">
-                                  <div class="sidebar_card_img">
-                                     <figure>
-                                        <img src="images/Card/card3.jpg" alt="">
-                                     </figure>
-                                  </div>
-                                  <div class="sidebar_card_content">
-                                     <h4 class="webkit" >
-                                        Qatar World Cup: Fans must show negative COVID-19 result
-                                     </h4>
-                                     <div class="sidebar_card_tags">
-                                        <div class="tag user"><i class="fa fa-user" aria-hidden="true"></i>  John Alia</div>
-                                        <div class="tag date"> <i class="fa fa-calendar-o" aria-hidden="true"></i>26 mar 2017</div>
-                                     </div>
-                                  </div>
-                               </a>
-                            </div>
-                         </div>
-                         <div class="side_bar  category_tags">
-                            <h4> <span>Popular Tags</span></h4>
-                            <div class="side_bar_tags">
-                               <a href="#">
-                                  Accessories
-                               </a>
-                               <a href="#">
-                                 Watches
-                               </a>
-                               <a href="#">
-                                Sports
-                                </a>
-                                <a href="#">
-                                  Beauty & Fitness
-                                  </a>
-                                  <a href="#">
-                                     Fashion
-                                     </a>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-        <div class="store_main">
-            <div class="alphabet">
-                <a  href="#" class="alphabet-item all-item  ">ALL Store</a>
+      <!-- ==========Store========== -->
+      <section class="store">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="blog_section flex_start">
+                     <div class="store_main">
+                        <div class="alphabet">
+                           <a href="#" class="alphabet-item all-item">ALL Store</a>
+                        </div>
+                        <div class="store_card_main">
+                           <div class="store_card_wrraper">
+                              <a href="#" class="store_heading">
+                                 <h4>Sore From A </h4>
+                              </a>
+   
+                              <div class="store_cards">
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_5.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_4.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_3.png" alt="">
+                                    </figure>
+                                    
+                                       <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="store_card_wrraper">
+                              <a href="#" class="store_heading">
+                                 <h4>Sore From B</h4>
+                              </a>
+   
+                              <div class="store_cards">
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_5.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_4.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_3.png" alt="">
+                                    </figure>
+                                    
+                                       <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="store_card_wrraper">
+                              <a href="#" class="store_heading">
+                                 <h4>Sore From C</h4>
+                              </a>
+   
+                              <div class="store_cards">
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_6.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_5.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_4.png" alt="">
+                                    </figure>
+                                        <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+   
+                                 <a  href="single_store.html" class="store_card">
+                                    <figure class="store_card_img">
+                                       <img src="images/Store/store_3.png" alt="">
+                                    </figure>
+                                    
+                                       <div class="store_card_title ">
+                                         <h4 class="webkit" > Pakistan</h4>
+                                       </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
             </div>
-            <div class="main_heading store_heading">
-                <h4>
-                   <span>Store From A </span>
-                </h4>
-             </div>
-             <div class="store_cards">
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_1.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_2.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_3.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_4.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-             </div>
-             <div class="main_heading store_heading">
-                <h4>
-                   <span>Store From B </span>
-                </h4>
-             </div>
-             <div class="store_cards">
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_5.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_7.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_9.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_1.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_2.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-                <a href="single_store.html" class="store_card">
-                    <div class="store_card_img">
-                            <figure>
-                                <img src="images/Store/store_5.png" alt="">
-                            </figure>          
-                    </div>
-                    <div class="store_card_content">
-                        Acerrit
-                    </div>
-                </a>
-             </div>
-        </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </div>
- </section>
+         </div>
+         </div>
+      </section>
 
 
 
-</main>
+   </main>
    <!-- ========== Footer Start ========== -->
    <footer class="footer-section">
       <div class="container">
@@ -368,20 +325,21 @@
                         <img src="images/logo.svg" alt="">
                      </a>
                      <div class="footer_logo_content">
-                        <p class="webkit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque pariatur praesentium optio ducimus unde, eum, quod debitis officiis, cumque nemo vero?</p>
+                        <p class="webkit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque
+                           pariatur praesentium optio ducimus unde, eum, quod debitis officiis, cumque nemo vero?</p>
                      </div>
                      <div class="footer_contact">
                         <div class="phone">
                            <i class="fa fa-phone" aria-hidden="true"></i>
                            <span>
-                        +(122) 12 123 12345
-                     </span>
+                              +(122) 12 123 12345
+                           </span>
                         </div>
                         <div class="location">
                            <i class="fa fa-map-marker" aria-hidden="true"></i>
                            <span>
-                        26985 Brighton Lane, 121 King Street Melbourne, 3000, Australia
-                     </span>
+                              26985 Brighton Lane, 121 King Street Melbourne, 3000, Australia
+                           </span>
                         </div>
                      </div>
                   </div>
@@ -392,32 +350,44 @@
                         </h4>
                      </div>
                      <ul>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
                            </svg><a href="#" class="footer_link">Home</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
                            </svg><a href="#" class="footer_link">About</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
                            </svg><a href="#" class="footer_link">Store</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
                            </svg><a href="#" class="footer_link">Blog</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
                            </svg><a href="#" class="footer_link">Categories</a></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right"
+                              width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                               <polyline points="7 7 12 12 7 17"></polyline>
                               <polyline points="13 7 18 12 13 17"></polyline>
@@ -503,9 +473,9 @@
       </div>
       <div class="footer_botton">
          <span>
-      Copyright 2022 © Techonza Blogs All Rights Reserved.
-Designed & Developed By <a href="#">Techonza.</a>
-   </span>
+            Copyright 2022 © Techonza Blogs All Rights Reserved.
+            Designed & Developed By <a href="#">Techonza.</a>
+         </span>
       </div>
    </footer>
 </body>
@@ -518,5 +488,3 @@ Designed & Developed By <a href="#">Techonza.</a>
 <script src="./js/script.js"></script>
 
 </html>
-
-
