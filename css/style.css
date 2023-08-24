@@ -1960,7 +1960,7 @@ h4.single_card_title.webkit {
 }
 
 .filter:hover {
-    background: var(--primary-100);
+    background: var(--primary-500);
     color: white;
 }
 
@@ -3006,7 +3006,7 @@ p {
     font-weight: 700;
     color: gray;
 }
-.conta_form_main {
+.contact_us_form_wrraper {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -3014,7 +3014,7 @@ p {
     align-items: center;
 }
 
-.conta_form_main > * {
+.contact_us_form_wrraper > * {
     flex: 1;
 }
 .contact_input {
@@ -3024,12 +3024,12 @@ p {
     border-radius: 5px;
 }
 
-.contact_input .icon {height: 40px;display: flex;align-items: center;justify-content: center;flex: 0 0 39px;background: #0005;color: black;}
+.contact_input .icon {height: 40px;display: flex;align-items: center;justify-content: center;flex: 0 0 39px;background: #e8e8e8;color: black;}
 
 .contact_field {
     border-radius: 5px;
     overflow: hidden;
-    border: 1px solid #0005;
+    border: 1px solid transparent;
     grid-column: span 2;
 }
 
@@ -3037,11 +3037,13 @@ p {
     width: 100%;
     height: 100%;
     padding-left: 10px;
+    background: white;
 }
 .contact_us_form {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    padding: 10px;
 }
 textarea {
     resize: none;
@@ -3051,6 +3053,7 @@ textarea {
 .contact_input:has(textarea){
     height: 100px;
     align-items: flex-start;
+    background: white;
 }
 .contact_input:has(textarea) .icon {
     border-radius: 0 0px 5px 0;
@@ -3101,5 +3104,28 @@ textarea {
 
 .contact_img img {
     object-fit: contain;
+}
+.contact_main_child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f3f3f3;
+    /* padding: 15px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact_title h4 {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 5px #0007;
+}
+
+.contact_title {
+    width: 100%;
+    background: var(--primary-600);
+    padding: 7px;
+    text-align: center;
 }
 /* ==========EditENd========== */

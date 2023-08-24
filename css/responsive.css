@@ -157,6 +157,9 @@ body.active:after {
 .main-category ,.store_card_main     {
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 }
+.sub_category_main{
+    grid-template-columns: repeat(auto-fill, minmax(149px, 1fr));
+}
 }
 @media (max-width: 768px) {
     .main-category{
