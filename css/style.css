@@ -162,7 +162,7 @@ p {
 
 .fa-star {
     color: #e1e1e1;
-    font-size: 23px;
+        font-size: clamp(18px, 2vw, 23px);
     cursor: pointer;
 }
 
@@ -288,7 +288,7 @@ form.form.active {
     padding: 0px 23px;
     background: var(--primary-500);
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     height: 35px;
     display: flex;
     align-items: center;
@@ -296,13 +296,13 @@ form.form.active {
 }
 
 .contact_btn:hover {
-    color: white;
+    color: var(--white);
     background: var(--primary-700);
 }
 
 .search_icon {
     font-size: 15px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     background: var(--primary-500);
     padding: 9px 10px;
@@ -388,7 +388,7 @@ input.search_input.active {
 .facebook,
 .instagram,
 .linkedin {
-    background-color: white;
+    color: var(--white);
     display: flex;
     border-radius: 5px;
     height: 34px;
@@ -403,7 +403,7 @@ input.search_input.active {
 
 .twitter {
     background: rgb(93, 169, 221);
-    color: white !important;
+    color: var(--white)!important;
 }
 
 .twitter i,
@@ -415,17 +415,17 @@ input.search_input.active {
 
 .facebook {
     background: rgb(24, 119, 242);
-    color: white !important;
+    color: var(--white)!important;
 }
 
 .instagram {
     background: linear-gradient(rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
-    color: white !important;
+    color: var(--white)!important;
 }
 
 .linkedin {
     background: rgb(2, 80, 177);
-    color: white !important;
+    color: var(--white)!important;
 }
 
 .nav_links.active {
@@ -658,7 +658,7 @@ input.search_input.active {
 
 .side_bar_tags a:hover {
     background: var(--primary-400);
-    color: white;
+    color: var(--white);
 }
 
 .side_bar_tags {
@@ -836,7 +836,7 @@ a.blog_cateogry_child.active:before {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     position: absolute;
     top: 10px;
     left: 10px;
@@ -1017,14 +1017,14 @@ figure {
 .hero_title h4 {
     font-size: clamp(18px, 2vw, 28px);
     font-weight: 700;
-    color: white;
+    color: var(--white);
     -webkit-line-clamp: 2;
 }
 
 .hero_btn {
     font-size: 17px;
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     padding: 8px 15px;
@@ -1061,7 +1061,7 @@ figure {
 }
 
 .hero_btn:hover {
-    color: white;
+    color: var(--white);
     background-color: var(--primary-700);
 }
 
@@ -1090,7 +1090,7 @@ figure {
     padding: 4px 10px;
     background: var(--primary-500);
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     font-size: 14px;
 }
 
@@ -1139,7 +1139,7 @@ figure {
 }
 
 .hero_slider {
-    padding: 0 48px;
+    margin: 0 48px;
     margin-top: -89px;
     padding-bottom: 30px;
 }
@@ -1251,7 +1251,7 @@ figure {
 
 .save:hover i {
     background: #000000ab;
-    color: white;
+    color: var(--white);
 }
 
 .latest_2nd_cntent .author {
@@ -1302,7 +1302,7 @@ figure {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     transition: 0.3s;
     padding: 4px 15px;
     font-size: 14px;
@@ -1342,13 +1342,14 @@ figure {
 .latest_2nd_cntent .author p {
     font-size: 16px;
     font-weight: 600;
+    color: var(--black);
 }
 
 .header_form.side_bar_form button {
     background: var(--primary-400);
     padding: 5px 10px;
     border-radius: 0 5px 5px 0;
-    color: white;
+    color: var(--white);
     transition: 0.3s;
 }
 
@@ -1374,7 +1375,7 @@ figure {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    color: white;
+    color: var(--white);
     transition: 0.3s;
 }
 
@@ -1419,9 +1420,9 @@ figure {
     width: 30px;
     background: var(--primary-500);
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     transition: 0.3s;
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .swiper-btn:after {
@@ -1442,7 +1443,7 @@ figure {
 
 .author_details {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -1461,13 +1462,13 @@ figure {
     flex-direction: column;
     position: absolute;
     display: flex;
-    align-items: center;
     gap: 5px;
     z-index: 3;
     background: white;
     right: 10px;
     bottom: 10px;
     border-radius: 5px;
+    align-items: flex-start;
     padding: 10px 40px;
 }
 
@@ -1493,7 +1494,7 @@ figure {
     justify-content: flex-end;
     padding: 3px 19px;
     border-radius: 3px;
-    color: white;
+    color: var(--white);
     font-size: 13px;
     transition: 0.3s;
 }
@@ -1534,7 +1535,6 @@ figure {
     border-radius: 7px;
 }
 
-.cate_card:hover .cate_card_img {}
 
 .cate_btn:hover {
     background: var(--secondary-900);
@@ -1564,6 +1564,7 @@ figure {
 .main_heading h4 span {
     position: relative;
     padding-bottom: 5px;
+    color: var(--black);
 }
 
 .main_heading h4 span:after {
@@ -1640,8 +1641,6 @@ figure {
     transition: 0.3s;
 }
 
-.post_img {}
-
 .post_img figure {
     border-radius: 5px 5px 0 0;
     position: relative;
@@ -1674,7 +1673,7 @@ figure {
 
 .heart:hover {
     background: var(--primary-700);
-    color: white;
+    color: var(--white);
 }
 
 .heart {
@@ -1690,11 +1689,11 @@ figure {
 }
 
 .post_tag .heart:hover i {
-    color: white;
+    color: var(--white);
 }
 
 .heart:hover i {
-    color: white;
+    color: var(--white);
 }
 
 .blog_post:hover .post_img figure img {
@@ -1740,12 +1739,12 @@ figure {
 
 .alphabet-item:hover {
     background-color: var(--primary-500);
-    color: white;
+    color: var(--white);
 }
 
 .alphabet-item.active {
     background-color: var(--primary-500);
-    color: white;
+    color: var(--white);
 }
 
 .store_main {
@@ -1832,7 +1831,7 @@ figure {
 .cate_link {
     border-radius: 5px;
     text-transform: capitalize;
-    color: white;
+    color: var(--white);
     background: var(--primary-500);
     transition: all 0.3s ease 0s;
     padding: 5px 25px;
@@ -1854,13 +1853,13 @@ figure {
 }
 
 .category_title h4 {
-    font-size: 27px;
+        font-size: clamp(20px, 2vw, 27px);
     font-weight: 700;
 }
 
 .cate_link:hover {
     background: var(--primary-700);
-    color: white;
+    color: var(--white);
 }
 
 /* ==========AboutUs========== */
@@ -1957,16 +1956,17 @@ h4.single_card_title.webkit {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
 }
 
 .filter:hover {
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
 }
 
 .filter.active {
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
     position: relative;
 }
 
@@ -2039,7 +2039,7 @@ h4.single_card_title.webkit {
 .get_code_btn.code_button {
     background: var(--secondary-500);
     border-radius: 5px;
-    color: white;
+    color: var(--white);
     font-size: 15px;
     height: 40px;
     width: 150px;
@@ -2102,7 +2102,7 @@ h4.single_card_title.webkit {
 /* ==========Footer========== */
 .footer-section {
     background: #0c0f12;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .footer_content {
@@ -2129,7 +2129,7 @@ h4.single_card_title.webkit {
 }
 
 .footer_logo_content p {
-    color: white;
+    color: var(--white);
     font-size: 15px;
     -webkit-line-clamp: 3;
 }
@@ -2148,7 +2148,7 @@ h4.single_card_title.webkit {
 }
 
 .footer_heading h4 span {
-    color: white;
+    color: var(--white);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -2196,7 +2196,7 @@ h4.single_card_title.webkit {
 }
 
 .subs_content h4 {
-    color: white;
+    color: var(--white);
     font-weight: 700;
     text-transform: capitalize;
     font-size: clamp(18px, 2vw, 22px);
@@ -2208,7 +2208,7 @@ h4.single_card_title.webkit {
     align-items: center;
     justify-content: center;
     padding: 6px 12px;
-    color: white;
+    color: var(--white);
     transition: all 0.3s ease 0s;
     border-radius: 5px;
 }
@@ -2371,7 +2371,7 @@ h4.single_card_title.webkit {
 
 .footer_blog_content h4 {
     font-size: clamp(16px, 2vw, 18px);
-    color: white;
+    color: var(--white);
     -webkit-line-clamp: 2;
 }
 
@@ -2405,7 +2405,7 @@ h4.single_card_title.webkit {
 }
 
 .card_verified_tag a {
-    color: white;
+    color: var(--white);
     font-weight: 600;
 }
 
@@ -2418,12 +2418,11 @@ h4.single_card_title.webkit {
     background-image: url("../images/coupon.png");
     flex-direction: column;
     gap: 5px;
-    /* clip-path: ellipse(100% 50% at 50% 40%); */
 }
 
 .modal-header .modal-title {
-    color: white;
-    font-size: 21px;
+    color: var(--white);
+        font-size: clamp(18px, 2vw, 21px);
     font-weight: 600;
     text-align: center;
 }
@@ -2447,9 +2446,7 @@ h4.single_card_title.webkit {
     box-shadow: -5px 3px 5px #0005;
 }
 
-.close:hover i {}
 
-.close:hover {}
 
 .close:hover i {
     transform: rotate(90deg);
@@ -2490,7 +2487,7 @@ h4.single_card_title.webkit {
     border-radius: 5px;
     position: relative;
     transition: 0.3s;
-    font-size: 21px;
+        font-size: clamp(18px, 2vw, 21px);
     align-items: center;
 }
 
@@ -2532,7 +2529,7 @@ h4.single_card_title.webkit {
     padding: 5px 12px;
     font-size: 12px;
     right: -26px;
-    color: white;
+    color: var(--white);
     transition: 0.3s;
     opacity: 0;
     font-weight: 600;
@@ -2688,6 +2685,7 @@ button.copy_code:hover~.copy_num {
     text-transform: capitalize;
     color: var(--black);
     transition: 0.3s;
+    padding-right: 6px;
 }
 
 .sub_category:hover {
@@ -2800,8 +2798,8 @@ button.copy_code:hover~.copy_num {
 
 .store_card_title {
     width: 100%;
-    background: var(--primary-500);
-    color: var(--white);
+    background: #e7e7e7;
+    color: var(--black);
     text-align: center;
     border-radius: 0 0 5px 5px;
     padding: 5px 0;
@@ -2825,11 +2823,11 @@ button.copy_code:hover~.copy_num {
 .store_card_title:before {
     content: "";
     position: absolute;
-    background: var(--primary-500);
+    background: inherit;
     height: 10px;
     width: 10px;
     bottom: 100%;
-    filter: brightness(.2);
+    filter: brightness(.8);
 }
 
 .store_card_title:before {
@@ -2848,7 +2846,7 @@ button.copy_code:hover~.copy_num {
 
 .store_card_title h4 {
     font-size: clamp(16px, 2vw, 18px);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .sidebar_card_tags .date {
@@ -2858,6 +2856,8 @@ button.copy_code:hover~.copy_num {
 
 .bg_color {
     background: #f0f5f6;
+    box-shadow: inset 0 0 8px #0001;
+
 }
 
 .our_post_main .blog_post {
@@ -2934,23 +2934,22 @@ button.copy_code:hover~.copy_num {
     justify-content: center;
     padding: 10px;
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
 }
 
 .store_heading h4 {
-    font-size: 25px;
+        font-size: clamp(19px, 2vw, 25px);
     font-weight: 700;
-    color: white;
+    color: var(--white);
 }
 
 .store_card_wrraper {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid #0002;
     border-radius: 10px;
     overflow: hidden;
-    background: #f4f4f4;
+    box-shadow: 0 0 9px #d5d5d5;
 }
 
 .code_card:has(.card_verified_tag) .cord_card_img {
@@ -3013,7 +3012,7 @@ p {
     align-items: center;
     justify-content: center;
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
     border-radius: 5px;
 }
 
@@ -3059,7 +3058,7 @@ p {
     justify-content: center;
     flex: 0 0 39px;
     background: #e8e8e8;
-    color: black;
+    color: var(--black);
 }
 
 .contact_field {
@@ -3116,7 +3115,7 @@ textarea {
 .contact_input:has(:where(textarea, input):focus) .icon {
     background-color: var(--primary-500);
     /* Change this to the desired border color */
-    color: white;
+    color: var(--white);
 }
 
 .contactbtn_mian {
@@ -3128,7 +3127,7 @@ textarea {
 
 .contactbtn {
     font-size: 15px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     background: var(--primary-500);
     padding: 9px 10px;
@@ -3166,7 +3165,7 @@ textarea {
 .contact_title h4 {
     font-size: clamp(18px, 2vw, 23px);
     font-weight: 700;
-    color: white;
+    color: var(--white);
     text-shadow: 0 0 5px #0007;
 }
 
@@ -3235,7 +3234,7 @@ textarea {
     width: 120px;
     border-radius: 3px;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 3px 0;
     font-weight: 700;
     display: flex;
@@ -3297,7 +3296,7 @@ textarea {
     background: var(--primary-500);
     padding: 5px 12px;
     border-radius: 5px;
-    color: white;
+    color: var(--white);
 }
 
 .copy_code_btn:hover {
@@ -3436,7 +3435,7 @@ textarea {
     max-width: 96%;
     margin: auto;
     margin-top: -81.295px;
-    background-color: white;
+    background-color: var(--white);
     z-index: 5;
     position: relative;
     border-radius: 10px;
@@ -3491,7 +3490,7 @@ textarea {
 }
 
 .single_blog_date span {
-    color: black;
+    color: var(--black);
     font-size: 14px;
 }
 
@@ -3505,6 +3504,7 @@ textarea {
     position: absolute;
     border-radius: 50px;
     transform: translateY(-50%);
+
 }
 
 .author .name {
@@ -3548,7 +3548,7 @@ textarea {
 }
 
 .single_blog_body h4 {
-    font-size: 21px;
+        font-size: clamp(18px, 2vw, 21px);
     font-weight: 700;
 }
 
@@ -3583,7 +3583,7 @@ textarea {
 
 .tag_item a:hover {
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
 }
 
 .sidebar_store:hover {
@@ -3614,16 +3614,16 @@ textarea {
 }
 
 .title_next_prev {
-    padding: 5px 0;
+    padding: 10px 0;
     text-align: center;
     background: var(--primary-500);
-    color: white;
+    color: var(--white);
     border-radius: 0 0 10px 10px;
     position: absolute;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: clamp(18px, 2vw, 20px);
     font-weight: 700;
 }
 
@@ -3671,8 +3671,8 @@ textarea {
 }
 
 .next_prev_img_content h4 {
-    font-size: 22px;
-    color: white;
+        font-size: clamp(19px, 2vw, 22px);
+    color: var(--white);
     z-index: 5;
     font-weight: 700;
     -webkit-line-clamp: 2;
@@ -3680,7 +3680,7 @@ textarea {
 
 .next_prev_img_content span {
     font-size: 14px;
-    color: white;
+    color: var(--white);
 }
 
 .next_prev:hover .next_prev_img_content {
@@ -3705,8 +3705,56 @@ textarea {
     max-width: 458px;
     margin-left: auto;
 }
+
 .next_prev_img_content.next_img_content h4 {
     text-align: right;
 }
 
+.disclimer_wrraper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.d_img {
+    flex: 0 0 400px;
+}
+
+.disclimer_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.disclimer_content h4 {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 700;
+}
+
+.disclimer_content p {
+    font-size: 15px;
+}
+
+.latest_post_content .author .author_details p {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.latest_post_content .author .author_details span {
+    color: gray;
+}
+
+.latest_2nd_cntent .author span {
+    color: gray;
+}
+.single_alphabet_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 /* ==========EditENd========== */

@@ -48,15 +48,7 @@ $(document).ready(function () {
       delay : 3000 
     }
   });
-  const mainAlpha = $('.alphabet');
-  const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  for (let index = 0; index < alphabet.length; index++) {
-    $(mainAlpha).append(` <a  href="#" class="alphabet-item ">${alphabet[index]}</a>`);
-    $('.alphabet-item').first().addClass("active");
-  }
-  $('.alphabet-item').click(function () {
-    $(this).addClass('active').siblings().removeClass('active')
-  });
+
   $('.deals_item').click(function () {
     $(this).addClass('active').siblings().removeClass('active')
   });
@@ -82,4 +74,25 @@ setTimeout(function() {
   // Show the content
   document.getElementById("content").style.display = "block";
 }, 2000); // Simulate a 2-second loading time
+
+const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+  const mainAlpha = $('.alphabet');
+  for (let index = 0; index < alphabet.length; index++) {
+    $(mainAlpha).append(` <a href="#" class="alphabet-item">${alphabet[index]}</a>`);
+  }
+  $('.alphabet-item').first().addClass("active");
+
+  $('.alphabet-item').click(function () {
+    const selectedAlphabet = $(this).text().trim().toUpperCase();
+    $('.store_card_wrraper').hide();
+
+    if (selectedAlphabet === 'ALL STORE') {
+      $('.store_card_wrraper').show();
+    } else {
+      $(`.store-${selectedAlphabet}`).show();
+    }
+
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 })
