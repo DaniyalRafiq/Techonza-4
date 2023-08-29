@@ -294,7 +294,8 @@ body.active:after {
     flex: 0 0 50px;
  }
  .cate_section ,  .contact_field_main {
-    flex-direction: column;
+    flex-direction: column !important;
+    align-items: center;
  }
  .single_blog_tag{
     display: none;
@@ -313,3 +314,4 @@ body.active:after {
  }
 }
 
+    
